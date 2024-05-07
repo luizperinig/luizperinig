@@ -1,5 +1,5 @@
 <div align="center">
-   <h3>Fala galera! Eu sou o Luiz ✋</h3>
+   <h3>Hi there! I'm Luiz ✋</h3>
 </div>
 
 <div align="center">
@@ -13,7 +13,7 @@
 </div>
 
 <div align="center">
-   <h2>Tecnologias que já trabalhei</h2> 
+   <h2>Technologies I've worked on</h2> 
 
 <div align="center" style="display: inline_block"><br/>
    <img align="center" alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
@@ -32,4 +32,4 @@
    <img align="center" alt="" src="" />
 </div><br/>
 
-Estudante de Engenharia de Controle e Automação na Universidade Federal de Minas Gerais
+Control and Automation Engineering Student at UFMG
