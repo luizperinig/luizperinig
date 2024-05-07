@@ -32,4 +32,4 @@
    <img align="center" alt="" src="" />
 </div><br/>
 
-Control and Automation Engineering Student at UFMG
+🧑‍💻Control and Automation Engineering Student at UFMG🧑‍💻
