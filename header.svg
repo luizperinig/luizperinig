@@ -1,53 +1,37 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="200" viewBox="0 0 900 200">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="860" height="160" viewBox="0 0 860 160">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#020408"/>
-      <stop offset="100%" style="stop-color:#060b12"/>
-    </linearGradient>
     <style>
-      @keyframes blink {
-        0%, 100% { opacity: 0.8; }
-        50% { opacity: 0; }
+      .name     { font-family: Georgia,'Times New Roman',serif; font-size: 54px; font-weight: 700; letter-spacing: -1.5px; fill: #24292f; }
+      .sub      { font-family: 'Courier New',monospace; font-size: 12.5px; letter-spacing: 0.5px; fill: #6e7681; }
+      .link     { font-family: 'Courier New',monospace; font-size: 12.5px; fill: #0969da; }
+      .sep      { font-family: 'Courier New',monospace; font-size: 12.5px; fill: #6e7681; }
+      .divider  { stroke: #d0d7de; stroke-width: 1; }
+
+      @media (prefers-color-scheme: dark) {
+        .name    { fill: #e6edf3; }
+        .sub     { fill: #8b949e; }
+        .link    { fill: #58a6ff; }
+        .sep     { fill: #3d444d; }
+        .divider { stroke: #21262d; }
       }
-      .cursor { animation: blink 1.2s step-end infinite; }
     </style>
   </defs>
 
-  <!-- background -->
-  <rect width="900" height="200" fill="url(#bg)"/>
+  <!-- name -->
+  <text x="0" y="68" class="name">Luiz Filipe Perini</text>
 
-  <!-- terminal top bar -->
-  <rect x="0" y="0" width="900" height="34" fill="#0d1117"/>
-  <rect x="0" y="33" width="900" height="1" fill="#1a2535"/>
+  <!-- subtitle -->
+  <text x="2" y="95" class="sub">Software Engineer · Intern @ Hotmart · Systems Eng. @ UFMG · Belo Horizonte, MG</text>
 
-  <!-- traffic lights -->
-  <circle cx="24" cy="17" r="5.5" fill="#ff5f57"/>
-  <circle cx="43" cy="17" r="5.5" fill="#ffbd2e"/>
-  <circle cx="62" cy="17" r="5.5" fill="#28c840"/>
+  <!-- divider -->
+  <line x1="0" y1="110" x2="200" y2="110" class="divider"/>
 
-  <!-- tab title -->
-  <text x="450" y="22" font-family="'SF Mono','Courier New',monospace" font-size="11" fill="#3d4f63" text-anchor="middle">luizperini — zsh — 120×40</text>
-
-  <!-- line 1: prompt + whoami -->
-  <text x="44" y="72" font-family="'SF Mono','Courier New',monospace" font-size="13" fill="#4f46e5">❯</text>
-  <text x="62" y="72" font-family="'SF Mono','Courier New',monospace" font-size="13" fill="#475569">whoami</text>
-
-  <!-- line 2: name output -->
-  <text x="44" y="100" font-family="'SF Mono','Courier New',monospace" font-size="30" font-weight="700" fill="#f0f6fc" letter-spacing="-0.5">Luiz Perini</text>
-
-  <!-- line 3: prompt + cat -->
-  <text x="44" y="130" font-family="'SF Mono','Courier New',monospace" font-size="13" fill="#4f46e5">❯</text>
-  <text x="62" y="130" font-family="'SF Mono','Courier New',monospace" font-size="13" fill="#475569">cat contact.txt</text>
-
-  <!-- line 4: contact output -->
-  <text x="44" y="155" font-family="'SF Mono','Courier New',monospace" font-size="12.5" fill="#64748b">Intern @ Hotmart  ·  Systems Eng. @ UFMG  ·  Belo Horizonte, MG</text>
-
-  <!-- line 5: links -->
-  <text x="44" y="178" font-family="'SF Mono','Courier New',monospace" font-size="12" fill="#4f46e5">→</text>
-  <text x="62" y="178" font-family="'SF Mono','Courier New',monospace" font-size="12" fill="#334a65">linkedin.com/in/luiz-filipe-perini-giacomin</text>
-  <text x="500" y="178" font-family="'SF Mono','Courier New',monospace" font-size="12" fill="#4f46e5">→</text>
-  <text x="518" y="178" font-family="'SF Mono','Courier New',monospace" font-size="12" fill="#334a65">@luizperini</text>
-
-  <!-- blinking cursor -->
-  <rect class="cursor" x="44" y="185" width="7" height="2" fill="#4f46e5"/>
+  <!-- links -->
+  <a xlink:href="https://linkedin.com/in/luiz-filipe-perini-giacomin-b97b37214" target="_blank">
+    <text x="0" y="135" class="link">LinkedIn</text>
+  </a>
+  <text x="64" y="135" class="sep"> · </text>
+  <a xlink:href="https://www.instagram.com/luizperini/" target="_blank">
+    <text x="82" y="135" class="link">Instagram</text>
+  </a>
 </svg>
